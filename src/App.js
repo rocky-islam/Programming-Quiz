@@ -1,10 +1,41 @@
-import logo from './logo.svg';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Home from './components/Home/Home';
+import Statistics from './components/Statistics/Statistics';
+import Blog from './components/Blog/Blog';
+import Main from './layout/Main';
+import ErrorPage from './components/ErrorPage/ErrorPage';
 
 function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Main></Main>,
+      children: [
+        {
+          path: '/',
+          element: <Home></Home>
+        },
+        {
+          path: "/statistic",
+          element: <Statistics></Statistics>,
+        },
+        {
+          path: "/blog",
+          element: <Blog></Blog>,
+        }
+      ],
+    },
+    {
+      path: '*',
+      element: <ErrorPage></ErrorPage>
+    }
+  ]);
   return (
-    <div className="App">
-      <h1>Hello world</h1>
+    <div>
+      <RouterProvider
+      router={router}
+      ></RouterProvider>
     </div>
   );
 }
