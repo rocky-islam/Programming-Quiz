@@ -10,7 +10,8 @@ const Quiz = () => {
     
     return (
       <div>
-        <div className='text-center'>
+        <div>
+            <div className='text-center'>
           <h1 className='text-4xl p-3'>Start {quiz.data.name} Quiz</h1>
           <h1>Total quiz: {questions.length}</h1>
         </div>
@@ -21,6 +22,7 @@ const Quiz = () => {
                 qzQuestion={qzQuestion}
                 ></Question>)
             }
+        </div>
         </div>
       </div>
     );
