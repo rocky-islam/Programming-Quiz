@@ -30,12 +30,14 @@ const Home = () => {
 
             <div>
                 <h1>Data: {allTopic.length}</h1>
-                {
-                    allTopic.map(allData => <DataTopic
-                    key={allData.id}
-                    allData={allData}
-                    ></DataTopic>)
-                }
+                <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-5'>
+                    {
+                        allTopic.map(allData => <DataTopic
+                        key={allData.id}
+                        allData={allData}
+                        ></DataTopic>)
+                    }
+                </div>
             </div>
 
         </div>
