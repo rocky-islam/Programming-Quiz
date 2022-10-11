@@ -12,7 +12,7 @@ const Question = ({qzQuestion}) => {
     const questionName = question_name[1].split('</p>');
     
     const handleEye =() =>{
-        console.log(correctAnswer);
+        // console.log(correctAnswer);
         Swal.fire(`Correct Answer is`, `${correctAnswer}`, "success");
         
     }
@@ -24,8 +24,8 @@ const Question = ({qzQuestion}) => {
         <div className='mt-10 bg-slate-400 border-red-800 border w-2/4 ml-3 p-5'>
             <div className=''>
             <div className='flex justify-between'>
-                <p>Quiz: {questionName}</p>
-                <div>
+                <p className='text-sm md:text-base'>Quiz: {questionName}</p>
+                <div className='ml-3'>
                     <button onClick={() =>handleEye(correctAnswer)}>
                         <EyeIcon className='h-6 w-6'></EyeIcon>
                     </button>
@@ -34,8 +34,10 @@ const Question = ({qzQuestion}) => {
             <div className='mt-5'>
                 {
                     options.map(option => <Options
+                    key={option}
                     option={option}
                     id={id}
+                    correctAnswer={correctAnswer}
                     ></Options>)
                 }
                 {/* <div>
