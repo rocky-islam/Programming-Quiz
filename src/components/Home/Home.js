@@ -1,6 +1,12 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import DataTopic from '../DataTopic/DataTopic';
 
 const Home = () => {
+    const quizTopic = useLoaderData();
+    const allTopic = quizTopic.data;
+    // console.log(allTopic);
+    
     return (
         <div>
             <div>
@@ -21,6 +27,17 @@ const Home = () => {
                         </div>
                 </div>
             </div>
+
+            <div>
+                <h1>Data: {allTopic.length}</h1>
+                {
+                    allTopic.map(allData => <DataTopic
+                    key={allData.id}
+                    allData={allData}
+                    ></DataTopic>)
+                }
+            </div>
+
         </div>
     );
 };
