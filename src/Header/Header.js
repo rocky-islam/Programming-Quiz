@@ -10,7 +10,7 @@ const Header = () => {
 
             <div className='navbar bg-purple-300 md:flex'>
                 <div className='flex-1'>
-                    <NavLink className="btn btn-ghost normal-case text-xl">Programming Quiz</NavLink>
+                    <NavLink className="btn btn-ghost normal-case text-xl pl-2">Programming Quiz</NavLink>
                 </div>
                 <div className=''>
                     <div onClick={() => setOpen(!open)} className='h-6 w-6 md:hidden'>

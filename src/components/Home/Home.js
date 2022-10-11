@@ -28,8 +28,8 @@ const Home = () => {
                 </div>
             </div>
 
-            <div>
-                <h1>Data: {allTopic.length}</h1>
+            <div className='mt-12'>
+                <h1 className='text-center mb-8 text-2xl font-medium '>Total Topic: {allTopic.length}</h1>
                 <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-5'>
                     {
                         allTopic.map(allData => <DataTopic

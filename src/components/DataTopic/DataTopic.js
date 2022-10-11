@@ -10,13 +10,13 @@ const DataTopic = ({allData}) => {
             <div>
                 <img src={logo} alt="" />
             </div>
-            <div className='grid grid-cols-3 gap-5 mt-4'>
+            <div className='grid grid-cols-3 gap-5 mt-5'>
                 <p>{name}</p>
                 <p>Total quiz:{total}</p>
-                <div className='bg-indigo-600 rounded-md flex justify-evenly p-1'>
-                    <button >GoTo
-                </button>
+                <div className='bg-indigo-600 rounded-md flex justify-evenly'>
+                    <button className='flex p-1'>GoTo
                 <ArrowLongRightIcon className='w-6 h-6'></ArrowLongRightIcon>
+                </button>
                 </div>
             </div>
             
