@@ -1,6 +1,6 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was Tailwind and React with [Programming Quiz](https://soft-cascaron-672d6d.netlify.app/).
 
 ## Available Scripts
 
