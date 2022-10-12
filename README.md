@@ -1,6 +1,10 @@
 # Getting Started with Create React App
 
-This project was Tailwind and React with [Programming Quiz](https://soft-cascaron-672d6d.netlify.app/).
+### Project name
+
+## `Programming Quiz`
+
+This project was create Tailwind and React. Live Link=> [Programming Quiz](https://soft-cascaron-672d6d.netlify.app/).
 
 ## Available Scripts
 
