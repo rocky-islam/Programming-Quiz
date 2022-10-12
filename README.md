@@ -1,10 +1,22 @@
 # Getting Started with Create React App
 
+### Developer
+
+## `Md Rocky islam`
+
 ### Project name
 
 ## `Programming Quiz`
 
 This project was create Tailwind and React. Live Link=> [Programming Quiz](https://soft-cascaron-672d6d.netlify.app/).
+
+### Feature of This website
+
+- It is a quiz website every one can access and try to quiz.
+- In quiz section when we click the right answer its show its right with toast.
+- if the answer is wrong its show its wrong answer and show the right answer with toast.
+- quiz section have a eye button someone want shaw the right answer of the quiz then click the eye button and show the answer with toast.
+- This website have statistic page there have chart of all quiz and also have blog page there have some blog
 
 ## Available Scripts
 
